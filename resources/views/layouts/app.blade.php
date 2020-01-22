@@ -28,8 +28,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-dark shadow-sm">
             <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    <img class='navbar-logo' src="{{ asset('images/logo.png') }}">
+                <a class="navbar-brand" href="{{ url('/') }}"  style='font-size: 30px;'>
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
@@ -46,15 +45,15 @@
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
                         <li class="nav-item">
-                            <a href="{{ route('create') }}" class='nav-link'>レビューを書く</a>
+                            <a href="{{ route('create') }}" class='nav-link'>投稿する</a>
                         </li>
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('ログイン') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                    <a class="nav-link" href="{{ route('register') }}">{{ __('登録') }}</a>
                                 </li>
                             @endif
                         @else
@@ -93,7 +92,7 @@
             @yield('content')
         </main>
         <footer class='footer p20'>
-          <small class='copyright'>Laravel Book Reviews 2019 copyright</small>
+          <small class='copyright'>Copyright (C) 2020 失敗.com All Rights Reserved.</small>
         </footer>
     </div>
 </body>

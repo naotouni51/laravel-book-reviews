@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="row justify-content-center">
+<div class="row justify-content-start">
   @foreach($reviews as $review)
     <div class="col-md-4">
         <div class="card mb50">

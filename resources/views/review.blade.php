@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1 class='pagetitle'>レビュー投稿ページ</h1>
+<h1 class='pagetitle'>失敗談</h1>
 
 @if ($errors->any())
   <div class="alert alert-danger">
@@ -20,18 +20,18 @@
       <div class="card">
         <div class="card-body">
           <div class="form-group">
-            <label>本のタイトル</label>
+            <label>タイトル</label>
             <input type='text' class='form-control' name='title' placeholder='タイトルを入力'>
           </div>
           <div class="form-group">
-          <label>レビュー本文</label>
+          <label>本文</label>
             <textarea class='description form-control' name='body' placeholder='本文を入力'></textarea>
           </div>
           <div class="form-group">
-            <label for="file1">本のサムネイル</label>
+            <label for="file1">画像（一枚のみ）</label>
             <input type="file" id="file1" name='image' class="form-control-file">
           </div>
-          <input type='submit' class='btn btn-primary' value='レビューを登録'>
+          <input type='submit' class='btn btn-primary' value='投稿する'>
         </div>
       </div>
     </form>
